@@ -1,6 +1,13 @@
 /**
  * Site header
  */
+@mixin degrade(){
+ background: #251d40;
+ background: -moz-linear-gradient(45deg,  #251d40 2%, #bf1c19 79%, #442c55 79%, #442c55 100%);
+ background: -webkit-linear-gradient(45deg,  #251d40 2%, #442c55 79%,#442c55 79%,#442c55 100%);
+ background: linear-gradient(45deg,  #251d40 2%,#442c55 79%,#442c55 79%,#442c55 100%);
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#251d40', endColorstr='#442c55',GradientType=1 );
+}
 .site-header {
   border-top: 5px solid $grey-color-dark;
   border-bottom: 1px solid $grey-color-light;
@@ -8,25 +15,33 @@
 
   // Positioning context for the mobile navigation icon
   position: relative;
+
+  @include degrade();
 }
 
 .site-title {
-  @include relative-font-size(1.625);
+  @include relative-font-size(2.625);
   font-weight: 300;
-  line-height: $base-line-height * $base-font-size * 2.25;
+  line-height: $base-line-height * $base-font-size * 6.25;
   letter-spacing: -1px;
   margin-bottom: 0;
   float: left;
+  color: white;
 
   &,
   &:visited {
-    color: $grey-color-dark;
+    color: white;
+  }
+  &:hover{
+    text-decoration: none;
+    color: darken(white, 5);
   }
 }
 
 .site-nav {
   float: right;
-  line-height: $base-line-height * $base-font-size * 2.25;
+  line-height: $base-line-height * $base-font-size * 6.25;
+  font-size: 20px;
 
   .nav-trigger {
       display: none;
@@ -37,7 +52,7 @@
   }
 
   .page-link {
-    color: $text-color;
+    color: white;
     line-height: $base-line-height;
 
     // Gaps between nav items, but not on the last one
@@ -91,6 +106,7 @@
     .page-link {
       display: block;
       padding: 5px 10px;
+
 
       &:not(:last-child) {
         margin-right: 0;
