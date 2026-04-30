@@ -21,8 +21,8 @@ export default function HomePage() {
       <Section
         id="sobre"
         eyebrow="Sobre"
-        title="Tecnologia sem fetiche por hype. Arquitetura com compromisso com contexto."
-        description="O recorte mais útil da minha trajetória está menos em cargos e mais no tipo de problema que escolhi resolver."
+        title="Menos hype, mais contexto."
+        description="Ao longo da minha trajetória, acabei me aproximando mais de problemas que pedem clareza técnica, leitura de contexto e evolução sustentável."
       >
         <div className="surface rounded-[2rem] p-8 md:p-10">
           <div className="prose-custom">
