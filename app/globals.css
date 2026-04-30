@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  --font-sans: "Segoe UI", "Inter", "Helvetica Neue", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-page text-ink antialiased;
+  background-image:
+    radial-gradient(circle at top, rgba(99, 102, 241, 0.16), transparent 28%),
+    radial-gradient(circle at 80% 20%, rgba(34, 211, 238, 0.14), transparent 24%),
+    linear-gradient(180deg, #05070A 0%, #0B0F17 48%, #05070A 100%);
+}
+
+a {
+  @apply transition-colors duration-200;
+}
+
+::selection {
+  background: rgba(125, 211, 252, 0.25);
+}
+
+.surface {
+  @apply border border-line bg-white/[0.03] shadow-halo backdrop-blur;
+}
+
+.section-title {
+  @apply text-2xl font-semibold tracking-tight text-ink md:text-3xl;
+}
+
+.section-copy {
+  @apply max-w-prose text-sm leading-7 text-muted md:text-base;
+}
+
+.eyebrow {
+  @apply inline-flex items-center gap-2 rounded-full border border-line bg-white/[0.03] px-3 py-1 text-xs font-medium uppercase tracking-[0.24em] text-accent;
+}
+
+.prose-custom {
+  @apply max-w-prose text-base leading-8 text-slate-300;
+}
+
+.prose-custom h1,
+.prose-custom h2,
+.prose-custom h3 {
+  @apply mt-10 text-ink;
+}
+
+.prose-custom h1 {
+  @apply text-4xl font-semibold tracking-tight;
+}
+
+.prose-custom h2 {
+  @apply text-2xl font-semibold tracking-tight;
+}
+
+.prose-custom h3 {
+  @apply text-xl font-semibold;
+}
+
+.prose-custom p,
+.prose-custom ul,
+.prose-custom ol {
+  @apply mt-4;
+}
+
+.prose-custom ul {
+  @apply list-disc pl-6;
+}
+
+.prose-custom a {
+  @apply text-accent hover:text-white;
+}
+
+.prose-custom code {
+  @apply rounded bg-white/10 px-1.5 py-0.5 text-sm text-accent;
+}
+
+.prose-custom pre {
+  @apply mt-6 overflow-x-auto rounded-2xl border border-line bg-black/40 p-4;
+}
+
+.prose-custom pre code {
+  @apply bg-transparent p-0 text-slate-200;
+}
+
