@@ -77,4 +77,9 @@ export const serviceCards = [
     description:
       "Construção e evolução de aplicações com stack moderna, produtiva e compatível com o contexto técnico, operacional e de negócio do time.",
   },
+  {
+    title: "Mentoria de carreira",
+    description:
+      "Mentoria para desenvolvimento de carreira, transição para tecnologia, posicionamento técnico e leitura mais prática do mercado e da evolução profissional.",
+  },
 ];

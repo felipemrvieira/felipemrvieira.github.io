@@ -87,7 +87,7 @@ export default function HomePage() {
         id="consultoria"
         eyebrow="Consultoria"
         title="Como posso ajudar"
-        description="Atuação direta em arquitetura, modernização, plataforma e produtividade técnica."
+        description="Atuação direta em arquitetura, modernização, plataforma, produtividade técnica e mentoria."
       >
         <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
           {serviceCards.map((service) => (
@@ -118,6 +118,13 @@ export default function HomePage() {
           <LinkCard href={site.links.github} label="GitHub" copy="Código, experimentos e projetos públicos" />
           <LinkCard href={site.links.devto} label="DEV.to" copy="Artigos técnicos e rascunhos públicos" />
           <LinkCard href={`mailto:${site.email}`} label="Email" copy={site.email} icon={<Mail size={16} />} />
+        </div>
+        <div className="surface mt-6 rounded-3xl p-6">
+          <p className="text-sm leading-7 text-muted">
+            Também ofereço mentoria de carreira e apoio para transição para tecnologia. Se você está em início
+            de carreira, em mudança de área, ou precisa de apoio mas está com restrição financeira, pode entrar
+            em contato do mesmo jeito. A ideia aqui é conversar com contexto e encontrar um formato possível.
+          </p>
         </div>
       </Section>
     </>
