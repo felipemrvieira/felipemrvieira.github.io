@@ -8,18 +8,9 @@ import { Hero } from "@/components/Hero";
 import { ProjectCard } from "@/components/ProjectCard";
 import { Section } from "@/components/Section";
 import { SkillBadge } from "@/components/SkillBadge";
-import { Timeline } from "@/components/Timeline";
 import { getFeaturedArticles } from "@/lib/articles";
 import { projects } from "@/lib/projects";
-import {
-  experienceHighlights,
-  focusAreas,
-  ideas,
-  principles,
-  serviceCards,
-  site,
-  themes,
-} from "@/lib/site";
+import { focusAreas, principles, serviceCards, site, themes } from "@/lib/site";
 
 export default function HomePage() {
   const articles = getFeaturedArticles();
@@ -56,19 +47,11 @@ export default function HomePage() {
       </Section>
 
       <Section
-        eyebrow="Experiência"
-        title="Uma trajetória construída entre código, operação, modernização e contexto."
-        description="Sem inventar cargos ou empresas. O recorte aqui prioriza o tipo de problema resolvido e o tipo de responsabilidade assumida."
-      >
-        <Timeline items={experienceHighlights} />
-      </Section>
-
-      <Section
         eyebrow="Projetos em destaque"
         title="Projetos, conceitos e linhas de pesquisa aplicadas"
         description="Parte do trabalho aparece em código. Parte aparece como tese prática: formas melhores de pensar arquitetura, plataforma e produtividade técnica."
       >
-        <div className="grid gap-6 lg:grid-cols-2">
+        <div className="grid gap-6">
           {projects.map((project) => (
             <ProjectCard key={project.title} project={project} />
           ))}
@@ -89,21 +72,6 @@ export default function HomePage() {
           <Link href="/artigos/" className="inline-flex items-center gap-2 text-sm text-accent hover:text-white">
             Ver todos os artigos <ArrowRight size={16} />
           </Link>
-        </div>
-      </Section>
-
-      <Section
-        eyebrow="Ideias e palestras"
-        title="Algumas ideias que merecem palco, artigo ou debate técnico honesto."
-        description="São temas que ajudam a enquadrar discussões difíceis: complexidade, contexto, dívida técnica, produtividade assistida por IA e o preço de decisões arquiteturais mal alinhadas."
-      >
-        <div className="grid gap-6 md:grid-cols-3">
-          {ideas.map((idea) => (
-            <Card key={idea.title} className="space-y-4">
-              <h3 className="text-xl font-semibold tracking-tight text-white">{idea.title}</h3>
-              <p className="text-sm leading-7 text-muted">{idea.description}</p>
-            </Card>
-          ))}
         </div>
       </Section>
 
@@ -182,4 +150,3 @@ function LinkCard({
     </Link>
   );
 }
-

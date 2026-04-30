@@ -22,10 +22,8 @@ export const site = {
 
 export const navItems = [
   { href: "/sobre/", label: "Sobre" },
-  { href: "/experiencia/", label: "Experiência" },
   { href: "/projetos/", label: "Projetos" },
   { href: "/artigos/", label: "Artigos" },
-  { href: "/ideias/", label: "Ideias" },
   { href: "/consultoria/", label: "Consultoria" },
   { href: "/contato/", label: "Contato" },
 ] as const;
@@ -74,24 +72,6 @@ export const themes = [
   "SyntaxTax Benchmark",
 ] as const;
 
-export const experienceHighlights = [
-  {
-    title: "Mais de 10 anos construindo software em contextos diferentes",
-    description:
-      "Atuação contínua em desenvolvimento full stack, sustentação de sistemas críticos, integrações e evolução de aplicações que não podem parar enquanto o negócio continua cobrando resultado.",
-  },
-  {
-    title: "Produtos digitais, setor público, e-commerce, eventos e SaaS",
-    description:
-      "Experiência prática em domínios com restrições bem diferentes, o que ajuda a evitar arquitetura de vitrine e favorece decisões compatíveis com a operação real.",
-  },
-  {
-    title: "Desenvolvimento, plataforma e liderança técnica",
-    description:
-      "Participação em modernização de sistemas, automação de pipelines, desenho de APIs, padronização de ambientes e melhoria de produtividade de times.",
-  },
-] as const;
-
 export const principles = [
   "Complexidade precisa pagar aluguel.",
   "Arquitetura boa é a que o time consegue operar.",
@@ -124,25 +104,6 @@ export const serviceCards = [
   {
     title: "Desenvolvimento full stack",
     description:
-      "Construção e evolução de aplicações com foco em Rails, React, Next.js, APIs e integrações.",
+      "Construção e evolução de aplicações com stack moderna, produtiva e compatível com o contexto técnico, operacional e de negócio do time.",
   },
 ];
-
-export const ideas = [
-  {
-    title: "Lei CABE",
-    description:
-      "Complexidade adequada à bagagem da equipe: uma heurística para discutir arquitetura sem fetiche por stack ou por hype.",
-  },
-  {
-    title: "Arquitetura que sobrevive ao tempo",
-    description:
-      "Decisões arquiteturais que continuam compreensíveis quando o time muda, o hype passa e o sistema precisa continuar evoluindo.",
-  },
-  {
-    title: "Contexto como gargalo da IA em engenharia",
-    description:
-      "O custo técnico de usar IA não está só nos prompts, mas na estrutura de contexto, convenções, documentação e rastreabilidade de decisão.",
-  },
-];
-
