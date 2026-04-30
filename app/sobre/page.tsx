@@ -12,7 +12,7 @@ export default function SobrePage() {
       <Section
         eyebrow="Sobre"
         title="Tecnologia sem fetiche por hype. Arquitetura com compromisso com contexto."
-        description="Uma visão mais humana e mais precisa sobre a trajetória, os interesses e o tipo de conversa técnica que faz sentido por aqui."
+        description="O recorte mais útil da minha trajetória está menos em cargos e mais no tipo de problema que escolhi resolver."
       >
         <div className="surface rounded-[2rem] p-8 md:p-10">
           <div className="prose-custom">
@@ -23,19 +23,9 @@ export default function SobrePage() {
               Platform Engineering.
             </p>
             <p>
-              Nos últimos anos, meu foco tem se aproximado cada vez mais da arquitetura pragmática: decisões
-              técnicas que fazem sentido para o produto, para o time e para o momento da empresa. Gosto de
-              discutir tecnologia sem fetiche por hype, olhando para trade-offs, custo cognitivo, maturidade
-              operacional e capacidade real de manutenção.
-            </p>
-            <p>
-              Também venho explorando o impacto da IA no desenvolvimento de software, especialmente como
-              modelos de linguagem mudam o custo de contexto, documentação, revisão de código, arquitetura e
-              produtividade técnica.
-            </p>
-            <p>
-              Minha área de interesse hoje está entre desenvolvimento, arquitetura, plataforma, sistemas que
-              sobrevivem ao tempo e formas mais responsáveis de usar IA como apoio à engenharia.
+              Hoje, meu foco está em arquitetura pragmática, produtividade técnica, sistemas que sobrevivem ao
+              tempo e uso responsável de IA como apoio à engenharia. Interessa menos a stack da moda e mais a
+              capacidade do time de entender, operar e evoluir o sistema depois.
             </p>
           </div>
         </div>
@@ -43,11 +33,10 @@ export default function SobrePage() {
 
       <CTA
         title="Se a pauta envolve arquitetura, plataforma ou evolução de sistemas, já existe assunto em comum."
-        description="Projetos novos exigem construção. Sistemas vivos exigem leitura de contexto. Os dois cenários me interessam."
+        description="Projetos novos exigem construção. Sistemas vivos exigem leitura de contexto."
         href={`mailto:${site.email}`}
         label="Abrir conversa"
       />
     </>
   );
 }
-

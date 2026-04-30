@@ -13,7 +13,7 @@ export default function ConsultoriaPage() {
       <Section
         eyebrow="Consultoria"
         title="Ajuda técnica para sistemas que precisam evoluir sem virar reféns de complexidade ornamental."
-        description="A atuação pode ser pontual ou recorrente. O foco está em clareza arquitetural, produtividade real e desenho de soluções compatíveis com a maturidade operacional do time."
+        description="Atuação pontual ou recorrente em arquitetura, modernização, plataforma e produtividade técnica."
       >
         <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
           {serviceCards.map((service) => (
@@ -34,4 +34,3 @@ export default function ConsultoriaPage() {
     </>
   );
 }
-

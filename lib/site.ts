@@ -51,35 +51,6 @@ export const focusAreas = [
   },
 ] as const;
 
-export const themes = [
-  "Arquitetura Evolutiva",
-  "Rails & React",
-  "Next.js",
-  "APIs e integrações",
-  "SaaS Multi-Tenant",
-  "CI/CD",
-  "Docker",
-  "Kubernetes",
-  "Cloud-Native",
-  "Platform Engineering",
-  "DevEx",
-  "IA para engenharia de software",
-  "Observabilidade",
-  "Sistemas legados",
-  "Modernização incremental",
-  "Token-driven development",
-  "Lei CABE",
-  "SyntaxTax Benchmark",
-] as const;
-
-export const principles = [
-  "Complexidade precisa pagar aluguel.",
-  "Arquitetura boa é a que o time consegue operar.",
-  "IA acelera, mas não substitui critério técnico.",
-  "O melhor desenho é aquele que reduz o custo da próxima mudança.",
-  "Nem todo problema distribuído precisa de uma solução distribuída.",
-] as const;
-
 export const serviceCards = [
   {
     title: "Revisão arquitetural",

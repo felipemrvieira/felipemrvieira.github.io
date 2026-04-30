@@ -7,10 +7,9 @@ import { CTA } from "@/components/CTA";
 import { Hero } from "@/components/Hero";
 import { ProjectCard } from "@/components/ProjectCard";
 import { Section } from "@/components/Section";
-import { SkillBadge } from "@/components/SkillBadge";
 import { getFeaturedArticles } from "@/lib/articles";
 import { projects } from "@/lib/projects";
-import { focusAreas, principles, serviceCards, site, themes } from "@/lib/site";
+import { focusAreas, serviceCards, site } from "@/lib/site";
 
 export default function HomePage() {
   const articles = getFeaturedArticles();
@@ -35,21 +34,9 @@ export default function HomePage() {
       </Section>
 
       <Section
-        eyebrow="Temas"
-        title="Assuntos que orientam meu trabalho"
-        description="Nem tudo vira serviço, artigo ou palestra. Mas quase tudo acaba aparecendo como decisão arquitetural, padrão de time ou redução de complexidade."
-      >
-        <div className="flex flex-wrap gap-3">
-          {themes.map((theme) => (
-            <SkillBadge key={theme} label={theme} />
-          ))}
-        </div>
-      </Section>
-
-      <Section
         eyebrow="Projetos em destaque"
-        title="Projetos, conceitos e linhas de pesquisa aplicadas"
-        description="Parte do trabalho aparece em código. Parte aparece como tese prática: formas melhores de pensar arquitetura, plataforma e produtividade técnica."
+        title="Um recorte do que estou investigando e construindo"
+        description="Hoje, o principal destaque público é o SyntaxTax Benchmark: uma tentativa de medir o custo de contexto que diferentes stacks impõem ao desenvolvimento assistido por IA."
       >
         <div className="grid gap-6">
           {projects.map((project) => (
@@ -60,8 +47,8 @@ export default function HomePage() {
 
       <Section
         eyebrow="Artigos"
-        title="Escrita técnica para organizar contexto, confrontar hype e registrar trade-offs."
-        description="Os artigos misturam prática, arquitetura, IA aplicada ao desenvolvimento e temas que normalmente só aparecem tarde demais em retrospectivas."
+        title="Escrita técnica para registrar contexto e reduzir ruído."
+        description="Arquitetura, IA aplicada ao desenvolvimento, trade-offs e o tipo de problema que costuma aparecer tarde demais no ciclo de software."
       >
         <div className="grid gap-6 lg:grid-cols-3">
           {articles.map((article) => (
@@ -78,7 +65,7 @@ export default function HomePage() {
       <Section
         eyebrow="Consultoria"
         title="Como posso ajudar"
-        description="Quando o problema exige critério técnico, simplificação consciente e capacidade de execução, estes são alguns pontos onde costumo gerar mais valor."
+        description="Atuação direta em arquitetura, modernização, plataforma e produtividade técnica."
       >
         <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
           {serviceCards.map((service) => (
@@ -90,22 +77,9 @@ export default function HomePage() {
         </div>
       </Section>
 
-      <Section
-        eyebrow="Princípios"
-        title="Critérios simples para discussões que costumam ficar desnecessariamente sofisticadas."
-      >
-        <div className="grid gap-4 md:grid-cols-2">
-          {principles.map((principle) => (
-            <Card key={principle} className="flex items-center justify-between gap-4 py-5">
-              <p className="text-sm font-medium text-slate-200">{principle}</p>
-            </Card>
-          ))}
-        </div>
-      </Section>
-
       <CTA
-        title="Se o seu contexto está ficando mais complexo do que o time consegue operar, vale conversar."
-        description="Revisão arquitetural, modernização incremental, DevEx, pipelines e uso pragmático de IA para desenvolvimento."
+        title="Se o sistema está mais complexo do que o time consegue operar, vale conversar."
+        description="Arquitetura, modernização incremental, plataforma e uso pragmático de IA para desenvolvimento."
         href={`mailto:${site.email}`}
         label="Vamos conversar sobre seu contexto"
       />
