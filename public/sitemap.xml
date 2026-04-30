@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://felipemrvieira.github.io/</loc></url>
-  <url><loc>https://felipemrvieira.github.io/sobre/</loc></url>
-  <url><loc>https://felipemrvieira.github.io/projetos/</loc></url>
-  <url><loc>https://felipemrvieira.github.io/artigos/</loc></url>
   <url><loc>https://felipemrvieira.github.io/artigos/ola-ruby/</loc></url>
   <url><loc>https://felipemrvieira.github.io/artigos/ci-cd-com-github-actions/</loc></url>
   <url><loc>https://felipemrvieira.github.io/artigos/rails-api-com-docker/</loc></url>
-  <url><loc>https://felipemrvieira.github.io/consultoria/</loc></url>
-  <url><loc>https://felipemrvieira.github.io/contato/</loc></url>
+  <url><loc>https://felipemrvieira.github.io/artigos/o-proximo-gargalo-da-arquitetura-e-contexto/</loc></url>
+  <url><loc>https://felipemrvieira.github.io/artigos/lei-cabe-complexidade-adequada-a-bagagem-da-equipe/</loc></url>
+  <url><loc>https://felipemrvieira.github.io/artigos/vibe-coding-com-adrs/</loc></url>
 </urlset>

@@ -23,19 +23,19 @@ export function Hero() {
 
           <div className="flex flex-col gap-3 sm:flex-row">
             <Link
-              href="/projetos/"
+              href="/#projetos"
               className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-medium text-slate-950 transition hover:bg-accent"
             >
               Ver projetos <ArrowRight size={16} />
             </Link>
             <Link
-              href="/artigos/"
+              href="/#artigos"
               className="inline-flex items-center justify-center gap-2 rounded-full border border-line bg-white/[0.03] px-6 py-3 text-sm font-medium text-white transition hover:bg-white/[0.08]"
             >
               Ler artigos
             </Link>
             <Link
-              href="/contato/"
+              href="/#contato"
               className="inline-flex items-center justify-center gap-2 rounded-full border border-line bg-transparent px-6 py-3 text-sm font-medium text-muted transition hover:border-accent/50 hover:text-white"
             >
               Falar comigo
@@ -67,4 +67,3 @@ export function Hero() {
     </section>
   );
 }
-

@@ -19,6 +19,30 @@ export default function HomePage() {
       <Hero />
 
       <Section
+        id="sobre"
+        eyebrow="Sobre"
+        title="Tecnologia sem fetiche por hype. Arquitetura com compromisso com contexto."
+        description="O recorte mais útil da minha trajetória está menos em cargos e mais no tipo de problema que escolhi resolver."
+      >
+        <div className="surface rounded-[2rem] p-8 md:p-10">
+          <div className="prose-custom">
+            <p>
+              Sou Felipe Maciel Ramos Vieira, engenheiro de software com mais de uma década de experiência
+              construindo, mantendo e evoluindo sistemas web. Minha trajetória passa por desenvolvimento full
+              stack, APIs, plataformas SaaS, integrações, automação de ambientes e práticas de DevOps e
+              Platform Engineering.
+            </p>
+            <p>
+              Hoje, meu foco está em arquitetura pragmática, produtividade técnica, sistemas que sobrevivem
+              ao tempo e uso responsável de IA como apoio à engenharia. Interessa menos a stack da moda e mais
+              a capacidade do time de entender, operar e evoluir o sistema depois.
+            </p>
+          </div>
+        </div>
+      </Section>
+
+      <Section
+        id="atuacao"
         eyebrow="O que eu faço"
         title="Construo software com foco em clareza operacional, evolução contínua e custo real de manutenção."
         description="O trabalho muda conforme o contexto. O critério não. Arquitetura, plataforma e desenvolvimento precisam servir ao produto e ao time, não à estética da stack."
@@ -34,6 +58,7 @@ export default function HomePage() {
       </Section>
 
       <Section
+        id="projetos"
         eyebrow="Projetos em destaque"
         title="Um recorte do que estou investigando e construindo"
         description="Hoje, o principal destaque público é o SyntaxTax Benchmark: uma tentativa de medir o custo de contexto que diferentes stacks impõem ao desenvolvimento assistido por IA."
@@ -46,6 +71,7 @@ export default function HomePage() {
       </Section>
 
       <Section
+        id="artigos"
         eyebrow="Artigos"
         title="Escrita técnica para registrar contexto e reduzir ruído."
         description="Arquitetura, IA aplicada ao desenvolvimento, trade-offs e o tipo de problema que costuma aparecer tarde demais no ciclo de software."
@@ -56,13 +82,14 @@ export default function HomePage() {
           ))}
         </div>
         <div className="mt-8">
-          <Link href="/artigos/" className="inline-flex items-center gap-2 text-sm text-accent hover:text-white">
-            Ver todos os artigos <ArrowRight size={16} />
+          <Link href={site.links.devto} className="inline-flex items-center gap-2 text-sm text-accent hover:text-white">
+            Ver mais no DEV.to <ArrowRight size={16} />
           </Link>
         </div>
       </Section>
 
       <Section
+        id="consultoria"
         eyebrow="Consultoria"
         title="Como posso ajudar"
         description="Atuação direta em arquitetura, modernização, plataforma e produtividade técnica."
@@ -85,6 +112,7 @@ export default function HomePage() {
       />
 
       <Section
+        id="contato"
         eyebrow="Contato"
         title="Links públicos"
         description="O jeito mais direto de continuar a conversa, acompanhar conteúdo técnico ou abrir uma pauta de trabalho."

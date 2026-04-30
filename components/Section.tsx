@@ -2,6 +2,7 @@ import { Container } from "@/components/Container";
 import { cn } from "@/lib/utils";
 
 type SectionProps = {
+  id?: string;
   eyebrow?: string;
   title: string;
   description?: string;
@@ -9,9 +10,9 @@ type SectionProps = {
   className?: string;
 };
 
-export function Section({ eyebrow, title, description, children, className }: SectionProps) {
+export function Section({ id, eyebrow, title, description, children, className }: SectionProps) {
   return (
-    <section className={cn("py-16 md:py-24", className)}>
+    <section id={id} className={cn("scroll-mt-28 py-16 md:py-24", className)}>
       <Container>
         <div className="mb-8 space-y-4 md:mb-12">
           {eyebrow ? <span className="eyebrow">{eyebrow}</span> : null}
@@ -25,4 +26,3 @@ export function Section({ eyebrow, title, description, children, className }: Se
     </section>
   );
 }
-

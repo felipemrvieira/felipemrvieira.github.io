@@ -21,11 +21,11 @@ export const site = {
 } as const;
 
 export const navItems = [
-  { href: "/sobre/", label: "Sobre" },
-  { href: "/projetos/", label: "Projetos" },
-  { href: "/artigos/", label: "Artigos" },
-  { href: "/consultoria/", label: "Consultoria" },
-  { href: "/contato/", label: "Contato" },
+  { href: "/#sobre", label: "Sobre" },
+  { href: "/#projetos", label: "Projetos" },
+  { href: "/#artigos", label: "Artigos" },
+  { href: "/#consultoria", label: "Consultoria" },
+  { href: "/#contato", label: "Contato" },
 ] as const;
 
 export const focusAreas = [
