@@ -6,9 +6,17 @@ import { formatDate } from "@/lib/utils";
 
 type ArticleCardProps = {
   article: ArticleMeta;
+  actionLabel?: string;
+  actionHref?: string;
+  onAction?: () => void;
 };
 
-export function ArticleCard({ article }: ArticleCardProps) {
+export function ArticleCard({
+  article,
+  actionLabel = "Ler",
+  actionHref = `/artigos/${article.slug}/`,
+  onAction,
+}: ArticleCardProps) {
   return (
     <Card className="flex h-full flex-col gap-5">
       <div className="space-y-3">
@@ -24,11 +32,16 @@ export function ArticleCard({ article }: ArticleCardProps) {
             </span>
           ))}
         </div>
-        <Link href={`/artigos/${article.slug}/`} className="text-sm text-accent hover:text-white">
-          Ler
-        </Link>
+        {onAction ? (
+          <button type="button" onClick={onAction} className="text-sm text-accent hover:text-white">
+            {actionLabel}
+          </button>
+        ) : (
+          <Link href={actionHref} className="text-sm text-accent hover:text-white">
+            {actionLabel}
+          </Link>
+        )}
       </div>
     </Card>
   );
 }
-

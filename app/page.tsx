@@ -1,10 +1,10 @@
 import Link from "next/link";
 import { ArrowRight, Mail } from "lucide-react";
 
-import { ArticleCard } from "@/components/ArticleCard";
 import { Card } from "@/components/Card";
 import { CTA } from "@/components/CTA";
 import { Hero } from "@/components/Hero";
+import { HomeArticles } from "@/components/HomeArticles";
 import { ProjectCard } from "@/components/ProjectCard";
 import { Section } from "@/components/Section";
 import { getFeaturedArticles } from "@/lib/articles";
@@ -27,10 +27,9 @@ export default function HomePage() {
         <div className="surface rounded-[2rem] p-8 md:p-10">
           <div className="prose-custom">
             <p>
-              Sou Felipe Maciel Ramos Vieira, engenheiro de software com mais de uma década de experiência
-              construindo, mantendo e evoluindo sistemas web. Minha trajetória passa por desenvolvimento full
-              stack, APIs, plataformas SaaS, integrações, automação de ambientes e práticas de DevOps e
-              Platform Engineering.
+              Sou Felipe Maciel Ramos Vieira, engenheiro de software com experiência em construir, manter e
+              evoluir sistemas web. Minha trajetória passa por desenvolvimento full stack, APIs, plataformas
+              SaaS, integrações, automação de ambientes e práticas de DevOps e Platform Engineering.
             </p>
             <p>
               Hoje, meu foco está em arquitetura pragmática, produtividade técnica, sistemas que sobrevivem
@@ -76,11 +75,7 @@ export default function HomePage() {
         title="Escrita técnica para registrar contexto e reduzir ruído."
         description="Arquitetura, IA aplicada ao desenvolvimento, trade-offs e o tipo de problema que costuma aparecer tarde demais no ciclo de software."
       >
-        <div className="grid gap-6 lg:grid-cols-3">
-          {articles.map((article) => (
-            <ArticleCard key={article.slug} article={article} />
-          ))}
-        </div>
+        <HomeArticles articles={articles} />
         <div className="mt-8">
           <Link href={site.links.devto} className="inline-flex items-center gap-2 text-sm text-accent hover:text-white">
             Ver mais no DEV.to <ArrowRight size={16} />
