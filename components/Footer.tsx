@@ -10,8 +10,8 @@ export function Footer() {
         <div className="space-y-2">
           <p className="font-medium text-slate-200">{site.name}</p>
           <p className="max-w-xl">
-            Desenvolvimento, arquitetura e plataforma com foco em sistemas que continuam compreensíveis
-            depois que o hype passa.
+            Trabalho com desenvolvimento, arquitetura e plataforma para construir sistemas claros,
+            sustentáveis e fáceis de evoluir.
           </p>
         </div>
         <div className="flex flex-wrap gap-4">
@@ -32,4 +32,3 @@ export function Footer() {
     </footer>
   );
 }
-
